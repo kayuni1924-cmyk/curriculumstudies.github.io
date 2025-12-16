@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        .contact-box {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+        }
+        label {
+            font-weight: bold;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header class="header">
+    <h1>Contact Us</h1>
+    <p>Get in touch with the course instructor</p>
+</header>
+
+<section style="padding:20px; max-width:900px; margin:auto;">
+
+    <!-- CONTACT DETAILS -->
+    <div class="contact-box">
+        <h2>Instructor Contact Information</h2>
+
+        <p><strong>Name:</strong> Mr. Emmanuel Nestory Kayuni</p>
+        <p><strong>Position:</strong> Curriculum and Teaching Specialist</p>
+        <p><strong>Institution:</strong> Mwalimu Julius K. Nyerere University of Agriculture and Technology</p>
+        <p><strong>Email:</strong> kayuni1924@gmail.com</p>
+        <p><strong>Phone:</strong> +255 626 594 282</p>
+    </div>
+
+    <!-- CONTACT FORM -->
+    <div class="contact-box">
+        <h2>Send a Message</h2>
+        <p>Please use the form below for academic inquiries related to the course.</p>
+
+        <form action="mailto:kayuni1924@gmail.com" method="POST" enctype="text/plain">
+            <label>Your Full Name</label>
+            <input type="text" name="Name" required>
+
+            <label>Email Address</label>
+            <input type="email" name="Email" required>
+
+            <label>Subject</label>
+            <input type="text" name="Subject" required>
+
+            <label>Your Message</label>
+            <textarea name="Message" rows="8" required></textarea>
+
+            <button class="card">Send Message</button>
+        </form>
+    </div>
+
+    <a href="index.html" class="card">Back to Homepage</a>
+
+</section>
+
+</body>
+</html>
