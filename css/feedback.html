@@ -4,6 +4,49 @@
     <meta charset="UTF-8">
     <title>Student Feedback</title>
     <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        .feedback-box {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            max-width: 700px;
+            margin: auto;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        label {
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 12px;
+            margin-top: 8px;
+            margin-bottom: 18px;
+            border-radius: 8px;
+            border: 1px solid #aaa;
+        }
+
+        button {
+            padding: 12px 20px;
+            font-size: 18px;
+            border-radius: 10px;
+            border: none;
+            background-color: #0047ba;
+            color: white;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #003a99;
+        }
+
+        h2, h3 {
+            color: #0047ba;
+        }
+    </style>
 </head>
 
 <body>
@@ -14,21 +57,28 @@
 
 <section style="padding:20px;">
 
-    <h3>Submit Your Feedback</h3>
-    <p>Your feedback helps us improve teaching and learning.</p>
+    <div class="feedback-box">
 
-    <form action="mailto:kayuni1924@gmail.com" method="POST" enctype="text/plain">
+        <h2>We Value Your Feedback</h2>
+        <p>Please share your feedback to help improve teaching and learning in this course.</p>
 
-        <label>Your Name:</label><br>
-        <input type="text" name="Student Name" required><br><br>
+        <form action="mailto:kayuni1924@gmail.com" method="POST" enctype="text/plain">
 
-        <label>Your Feedback:</label><br>
-        <textarea name="Feedback Message" rows="8" style="width:100%;" required></textarea><br><br>
+            <label>Your Name (optional):</label>
+            <input type="text" name="Name" placeholder="Enter your name">
 
-        <button class="card">Send Feedback</button>
-    </form>
+            <label>Your Email (optional):</label>
+            <input type="email" name="Email" placeholder="Enter your email">
 
-    <a href="index.html" class="card" style="margin-top:20px;">Back to Homepage</a>
+            <label>Your Feedback:</label>
+            <textarea name="Feedback Message" rows="7" placeholder="Write your feedback here..." required></textarea>
+
+            <button type="submit">Submit Feedback</button>
+        </form>
+    </div>
+
+    <br>
+    <a href="index.html" class="card">Back to Homepage</a>
 
 </section>
 
