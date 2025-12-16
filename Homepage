@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Curriculum Studies LMS</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Curriculum Studies Learning Management System</h1>
+        <p>Teaching, Learning & Digital Curriculum Resources</p>
+    </header>
+
+    <section class="menu">
+        <a href="lessons/unit1.html" class="card">Unit 1: Foundations of Curriculum</a>
+        <a href="lessons/unit2.html" class="card">Unit 2: Curriculum Models</a>
+        <a href="lessons/unit3.html" class="card">Unit 3: Curriculum Implementation</a>
+        <a href="resources/notes.html" class="card">Lecture Notes</a>
+        <a href="resources/videos.html" class="card">Video Lessons</a>
+        <a href="resources/pdfs.html" class="card">PDF Uploads</a>
+    </section>
+
+    <footer>
+        <p>© 2025 Curriculum Studies LMS | Designed by Emmanuel Kayuni</p>
+    </footer>
+</body>
+</html>
