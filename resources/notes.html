@@ -6,24 +6,40 @@
     <link rel="stylesheet" href="../css/style.css">
 
     <style>
-        .unit-box {
+        /* COLLAPSE DESIGN */
+        details {
             background: white;
-            padding: 25px;
-            border-radius: 15px;
-            margin-bottom: 30px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            padding: 15px 20px;
+            border-radius: 12px;
+            margin-bottom: 18px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            cursor: pointer;
         }
-        .unit-title {
-            font-size: 24px;
-            color: #0047ba;
+
+        summary {
+            font-size: 22px;
             font-weight: bold;
-            margin-bottom: 10px;
-        }
-        h3 {
             color: #0047ba;
+            outline: none;
         }
-        ul, p {
-            line-height: 1.6;
+
+        details summary::-webkit-details-marker {
+            display: none;
+        }
+
+        details[open] {
+            border-left: 5px solid #0047ba;
+            transition: 0.3s ease-in-out;
+        }
+
+        .unit-content {
+            padding: 15px 5px;
+            margin-top: 10px;
+            line-height: 1.7;
+        }
+
+        h3, h4 {
+            color: #0047ba;
         }
     </style>
 </head>
@@ -37,311 +53,230 @@
 <section style="padding:20px; max-width:1000px; margin:auto;">
 
 
-<!-- =================================================================== -->
+
+<!-- ======================================================== -->
 <!-- UNIT 1: FOUNDATIONS OF CURRICULUM -->
-<!-- =================================================================== -->
-<div class="unit-box">
-    <div class="unit-title">UNIT 1: Foundations of Curriculum</div>
+<!-- ======================================================== -->
+<details>
+    <summary>UNIT 1: Foundations of Curriculum</summary>
 
-    <p>This section will contain your notes on the foundations of curriculum. You may include: 
-       definitions of curriculum, historical background, philosophical foundations,
-       sociological influences, psychological foundations, and curriculum goals.  
-       (You may add more later.)</p>
+    <div class="unit-content">
+        <p>
+            This section will contain your notes on the foundations of curriculum.  
+            You may include: definitions, philosophical foundations, sociological foundations,
+            psychological foundations, historical development, and goals of curriculum.
+        </p>
 
-    <h3>Reference Books (APA 7th Edition)</h3>
-    <ul>
-        <li>Ornstein, A. C., & Hunkins, F. P. (2018). <i>Curriculum: Foundations, principles, and issues</i> (7th ed.). Pearson.</li>
-        <li>Tyler, R. W. (1949). <i>Basic principles of curriculum and instruction</i>. University of Chicago Press.</li>
-        <li>Taba, H. (1962). <i>Curriculum development: Theory and practice</i>. Harcourt, Brace & World.</li>
-    </ul>
-</div>
+        <h3>Reference Books (APA 7th Edition)</h3>
+        <ul>
+            <li>Ornstein, A. C., & Hunkins, F. P. (2018). <i>Curriculum: Foundations, principles, and issues</i>. Pearson.</li>
+            <li>Tyler, R. W. (1949). <i>Basic principles of curriculum and instruction</i>. University of Chicago Press.</li>
+            <li>Taba, H. (1962). <i>Curriculum development: Theory and practice</i>. Harcourt.</li>
+        </ul>
+    </div>
+</details>
 
 
-<!-- =================================================================== -->
+
+<!-- ======================================================== -->
 <!-- UNIT 2: CURRICULUM MODELS -->
-<!-- =================================================================== -->
-<div class="unit-box">
-    <div class="unit-title">UNIT 2: Curriculum Models</div>
+<!-- ======================================================== -->
+<details>
+    <summary>UNIT 2: Curriculum Models</summary>
 
-    <h3>2.1 Meaning of Curriculum Models</h3>
-    <p>
-        Curriculum models are systematic frameworks that guide planning, development, implementation, 
-        and evaluation of curriculum. They help educators decide:
-    </p>
-    <ul>
-        <li>What should be taught</li>
-        <li>How it should be taught</li>
-        <li>How learning should be assessed</li>
-    </ul>
+    <div class="unit-content">
 
-    <p>A curriculum model provides:</p>
-    <ul>
-        <li>A logical structure for curriculum design</li>
-        <li>A theoretical foundation for decision-making</li>
-        <li>Alignment of objectives, content, teaching, and evaluation</li>
-    </ul>
+        <h3>2.1 Meaning of Curriculum Models</h3>
+        <p>
+            Curriculum models are systematic frameworks that guide curriculum planning,
+            development, implementation, and evaluation. They help educators determine:
+        </p>
+        <ul>
+            <li>What should be taught</li>
+            <li>How it should be taught</li>
+            <li>How learning should be assessed</li>
+        </ul>
 
-    <h3>2.2 Purpose of Curriculum Models</h3>
-    <ul>
-        <li>Bring clarity and organization</li>
-        <li>Ensure alignment of goals and activities</li>
-        <li>Promote consistency in teaching</li>
-        <li>Support instructional decision-making</li>
-        <li>Facilitate curriculum evaluation</li>
-    </ul>
+        <h3>2.2 Purpose of Curriculum Models</h3>
+        <ul>
+            <li>Bring clarity and organization to curriculum development</li>
+            <li>Ensure alignment between goals and instructional activities</li>
+            <li>Promote consistency and coherence in teaching</li>
+            <li>Support evaluation and improvement processes</li>
+        </ul>
 
-    <h3>2.3 Major Curriculum Models</h3>
+        <h3>2.3 Major Curriculum Models</h3>
 
-    <h4>2.3.1 Tyler’s Objective Model</h4>
-    <p>
-        Proposed by Ralph Tyler (1949). It emphasizes:
-    </p>
-    <ul>
-        <li>Setting educational objectives</li>
-        <li>Selecting learning experiences</li>
-        <li>Organizing learning experiences</li>
-        <li>Evaluating outcomes</li>
-    </ul>
-    <p>Strength: systematic and goal-oriented.  
-       Limitation: too linear and rigid.</p>
+        <h4>2.3.1 Tyler’s Objective Model</h4>
+        <ul>
+            <li>Define objectives</li>
+            <li>Select learning experiences</li>
+            <li>Organize learning experiences</li>
+            <li>Evaluate achievement</li>
+        </ul>
+        <p><b>Criticism:</b> Too linear and rigid.</p>
 
-    <h4>2.3.2 Taba’s Grassroots Model</h4>
-    <p>Proposed by Hilda Taba (1962). Steps include:</p>
-    <ul>
-        <li>Diagnosis of needs</li>
-        <li>Formulation of objectives</li>
-        <li>Selection & organization of content</li>
-        <li>Selection & organization of learning experiences</li>
-        <li>Evaluation</li>
-    </ul>
+        <h4>2.3.2 Taba’s Grassroots Model</h4>
+        <ul>
+            <li>Diagnosis of learner needs</li>
+            <li>Formulation of objectives</li>
+            <li>Selection & organization of content</li>
+            <li>Selection & organization of learning experiences</li>
+            <li>Evaluation</li>
+        </ul>
 
-    <h4>2.3.3 Wheeler’s Cyclical Model</h4>
-    <p>
-        Wheeler viewed curriculum as a continuous cycle where evaluation feeds back into planning.  
-        This model emphasizes curriculum as dynamic.
-    </p>
+        <h4>2.3.3 Wheeler’s Cyclical Model</h4>
+        <p>Views curriculum development as continuous and cyclical.</p>
 
-    <h4>2.3.4 Miller and Seller’s Models</h4>
-    <ul>
-        <li><b>Transmission Model</b> – teacher-centered</li>
-        <li><b>Transaction Model</b> – learner-centered</li>
-        <li><b>Transformation Model</b> – holistic and humanistic</li>
-    </ul>
+        <h4>2.3.4 Miller & Seller Models</h4>
+        <ul>
+            <li>Transmission Model — teacher-centered</li>
+            <li>Transaction Model — learner-centered</li>
+            <li>Transformation Model — holistic + humanistic</li>
+        </ul>
 
-    <h3>2.4 Strengths and Limitations</h3>
-    <p><b>Strengths:</b></p>
-    <ul>
-        <li>Provide guidance for curriculum design</li>
-        <li>Improve coherence and alignment</li>
-        <li>Support logical decision-making</li>
-    </ul>
+        <h3>2.4 Strengths & Limitations</h3>
 
-    <p><b>Limitations:</b></p>
-    <ul>
-        <li>Some models are inflexible</li>
-        <li>Overemphasis on objectives reduces creativity</li>
-        <li>Do not always address cultural or contextual issues</li>
-    </ul>
+        <p><b>Strengths:</b></p>
+        <ul>
+            <li>Provide guidance for curriculum development</li>
+            <li>Ensure systematic approach</li>
+            <li>Promote coherence</li>
+        </ul>
 
-    <h3>References (Unit 2)</h3>
-    <ul>
-        <li>Tyler, R. W. (1949). <i>Basic principles of curriculum and instruction</i>. University of Chicago Press.</li>
-        <li>Taba, H. (1962). <i>Curriculum development: Theory and practice</i>. Harcourt.</li>
-        <li>Ornstein, A. C., & Hunkins, F. P. (2018). <i>Curriculum: Foundations, principles, and issues</i>. Pearson.</li>
-    </ul>
-</div>
+        <p><b>Limitations:</b></p>
+        <ul>
+            <li>Some models lack flexibility</li>
+            <li>May neglect creativity and innovation</li>
+            <li>May not fully address cultural/contextual issues</li>
+        </ul>
+
+        <h3>References</h3>
+        <ul>
+            <li>Tyler, R. W. (1949).</li>
+            <li>Taba, H. (1962).</li>
+            <li>Ornstein & Hunkins (2018).</li>
+        </ul>
+
+    </div>
+</details>
 
 
-<!-- =================================================================== -->
+
+<!-- ======================================================== -->
 <!-- UNIT 3: CURRICULUM IMPLEMENTATION -->
-<!-- =================================================================== -->
-<div class="unit-box">
-    <div class="unit-title">UNIT 3: Curriculum Implementation</div>
+<!-- ======================================================== -->
+<details>
+    <summary>UNIT 3: Curriculum Implementation</summary>
 
-    <h3>3.1 Meaning</h3>
-    <p>
-        Curriculum implementation is the process of putting a planned curriculum into practice through 
-        teaching and learning activities.
-    </p>
+    <div class="unit-content">
 
-    <h3>3.2 Importance</h3>
-    <ul>
-        <li>Ensures curriculum objectives are achieved</li>
-        <li>Aligns teaching strategies with curriculum goals</li>
-        <li>Ensures learners benefit from planned learning experiences</li>
-        <li>Determines success of educational reforms</li>
-    </ul>
+        <h3>3.1 Meaning</h3>
+        <p>Curriculum implementation refers to the actual use of the curriculum in teaching and learning.</p>
 
-    <h3>3.3 Factors Influencing Implementation</h3>
+        <h3>3.2 Importance</h3>
+        <ul>
+            <li>Ensures curriculum objectives are achieved</li>
+            <li>Connects curriculum plans with classroom practice</li>
+            <li>Promotes effective learning experiences</li>
+        </ul>
 
-    <h4>3.3.1 Teachers</h4>
-    <p>
-        Teacher competence, attitudes, and motivation strongly influence implementation.
-    </p>
+        <h3>3.3 Factors Affecting Implementation</h3>
+        <ul>
+            <li><b>Teachers</b>: competence, motivation, attitudes</li>
+            <li><b>Learners</b>: readiness, interests, learning styles</li>
+            <li><b>Resources</b>: textbooks, technology, infrastructure</li>
+            <li><b>School Leadership</b>: supervision, support</li>
+            <li><b>Policy Environment</b>: curriculum guidelines, societal expectations</li>
+        </ul>
 
-    <h4>3.3.2 Learners</h4>
-    <p>
-        Learner readiness, interest, and learning styles shape implementation.
-    </p>
+        <h3>3.4 Challenges</h3>
+        <ul>
+            <li>Limited resources</li>
+            <li>Inadequate teacher training</li>
+            <li>Resistance to change</li>
+            <li>Poor supervision</li>
+        </ul>
 
-    <h4>3.3.3 Teaching Resources</h4>
-    <p>
-        Availability of textbooks, digital tools, and infrastructure is essential.
-    </p>
+        <h3>3.5 Strategies for Effective Implementation</h3>
+        <ul>
+            <li>Professional development for teachers</li>
+            <li>Provision of adequate resources</li>
+            <li>Learner-centered pedagogy</li>
+            <li>Effective leadership</li>
+            <li>Continuous monitoring and evaluation</li>
+        </ul>
 
-    <h4>3.3.4 School Leadership</h4>
-    <p>
-        Supportive leadership improves supervision and instructional quality.
-    </p>
+        <h3>References</h3>
+        <ul>
+            <li>Fullan, M. (2007).</li>
+            <li>Print, M. (1993).</li>
+            <li>Marsh, C. J. (2009).</li>
+        </ul>
 
-    <h4>3.3.5 Policy & Environment</h4>
-    <p>
-        Educational policy, culture, and societal expectations influence implementation.
-    </p>
-
-    <h3>3.4 Challenges</h3>
-    <ul>
-        <li>Teacher resistance</li>
-        <li>Lack of training</li>
-        <li>Limited resources</li>
-        <li>Overloaded curriculum</li>
-        <li>Poor supervision</li>
-    </ul>
-
-    <h3>3.5 Strategies for Effective Implementation</h3>
-    <ul>
-        <li>Teacher professional development</li>
-        <li>Adequate resources</li>
-        <li>Learner-centered approaches</li>
-        <li>Strong leadership</li>
-        <li>Continuous monitoring & evaluation</li>
-    </ul>
-
-    <h3>References (Unit 3)</h3>
-    <ul>
-        <li>Fullan, M. (2007). <i>The new meaning of educational change</i>. Teachers College Press.</li>
-        <li>Print, M. (1993). <i>Curriculum development and design</i>. Allen & Unwin.</li>
-        <li>Marsh, C. J. (2009). <i>Key concepts for understanding curriculum</i>. Routledge.</li>
-    </ul>
-</div>
+    </div>
+</details>
 
 
-<!-- =================================================================== -->
+
+<!-- ======================================================== -->
 <!-- UNIT 4: CURRICULUM EVALUATION -->
-<!-- =================================================================== -->
-<div class="unit-box">
-    <div class="unit-title">UNIT 4: Curriculum Evaluation</div>
+<!-- ======================================================== -->
+<details>
+    <summary>UNIT 4: Curriculum Evaluation</summary>
 
-    <h3>4.1 Meaning</h3>
-    <p>
-        Curriculum evaluation is the systematic assessment of a curriculum’s effectiveness, relevance, 
-        and ability to achieve intended objectives.
-    </p>
+    <div class="unit-content">
 
-    <h3>4.2 Purpose</h3>
-    <ul>
-        <li>Assess achievement of objectives</li>
-        <li>Identify strengths and weaknesses</li>
-        <li>Improve curriculum quality</li>
-        <li>Guide decision-making and policy</li>
-    </ul>
+        <h3>4.1 Meaning</h3>
+        <p>Curriculum evaluation measures the effectiveness, relevance, and impact of a curriculum.</p>
 
-    <h3>4.3 Types of Evaluation</h3>
+        <h3>4.2 Purpose</h3>
+        <ul>
+            <li>Determine achievement of objectives</li>
+            <li>Identify strengths and weaknesses</li>
+            <li>Support curriculum improvement</li>
+            <li>Guide educational decision-making</li>
+        </ul>
 
-    <h4>4.3.1 Formative Evaluation</h4>
-    <p>Conducted during implementation to improve learning.</p>
+        <h3>4.3 Types of Evaluation</h3>
+        <ul>
+            <li><b>Formative:</b> during implementation</li>
+            <li><b>Summative:</b> after implementation</li>
+        </ul>
 
-    <h4>4.3.2 Summative Evaluation</h4>
-    <p>Conducted at the end of a program to assess effectiveness.</p>
+        <h3>4.4 Evaluation Models</h3>
+        <ul>
+            <li><b>Tyler's Model</b>: measures objective achievement</li>
+            <li><b>CIPP Model</b>: Context, Input, Process, Product</li>
+        </ul>
 
-    <h3>4.4 Evaluation Models</h3>
+        <h3>4.5 Challenges</h3>
+        <ul>
+            <li>Lack of reliable data</li>
+            <li>Limited expertise</li>
+            <li>Resistance from stakeholders</li>
+            <li>Resource constraints</li>
+        </ul>
 
-    <h4>4.4.1 Tyler’s Model</h4>
-    <p>Focuses on measuring achievement of objectives.</p>
+        <h3>References</h3>
+        <ul>
+            <li>Stufflebeam & Coryn (2014)</li>
+            <li>Posner (2004)</li>
+            <li>Ornstein & Hunkins (2018)</li>
+        </ul>
 
-    <h4>4.4.2 Stufflebeam’s CIPP Model</h4>
-    <p>Evaluates Context, Input, Process, Product — supports decision making.</p>
-
-    <h3>4.5 Challenges</h3>
-    <ul>
-        <li>Lack of expertise</li>
-        <li>Limited data</li>
-        <li>Stakeholder resistance</li>
-        <li>Resource constraints</li>
-    </ul>
-
-    <h3>References (Unit 4)</h3>
-    <ul>
-        <li>Stufflebeam, D. L., & Coryn, C. L. S. (2014). <i>Evaluation theory, models, and applications</i>. Jossey-Bass.</li>
-        <li>Posner, G. J. (2004). <i>Analyzing the curriculum</i>. McGraw-Hill.</li>
-        <li>Ornstein, A. C., & Hunkins, F. P. (2018). <i>Curriculum: Foundations, principles, and issues</i>. Pearson.</li>
-    </ul>
-</div>
+    </div>
+</details>
 
 
-<!-- =================================================================== -->
-<!-- UNIT 5: CONTEMPORARY ISSUES -->
-<!-- =================================================================== -->
-<div class="unit-box">
-    <div class="unit-title">UNIT 5: Contemporary Issues in Curriculum Studies</div>
 
-    <h3>5.1 Globalization and Curriculum</h3>
-    <p>
-        Globalization influences curriculum through international benchmarks, global citizenship, 
-        cross-cultural competencies, and sustainable development.
-    </p>
+<!-- ======================================================== -->
+<!-- UNIT 5: CONTEMPORARY ISSUES IN CURRICULUM STUDIES -->
+<!-- ======================================================== -->
+<details>
+    <summary>UNIT 5: Contemporary Issues in Curriculum Studies</summary>
 
-    <h3>5.2 Technology and Curriculum</h3>
-    <ul>
-        <li>E-learning systems</li>
-        <li>Artificial intelligence in education</li>
-        <li>Open educational resources (OER)</li>
-        <li>Blended and online learning</li>
-    </ul>
+    <div class="unit-content">
 
-    <h3>5.3 Inclusive & Equity-Oriented Curriculum</h3>
-    <ul>
-        <li>Gender equity</li>
-        <li>Special needs education</li>
-        <li>Cultural inclusivity</li>
-        <li>Inclusive pedagogy</li>
-    </ul>
-
-    <h3>5.4 Competency-Based Curriculum</h3>
-    <ul>
-        <li>Skills and competencies</li>
-        <li>Practical application</li>
-        <li>Lifelong learning</li>
-    </ul>
-
-    <h3>5.5 Curriculum & Sustainable Development</h3>
-    <ul>
-        <li>Environmental education</li>
-        <li>Ethical responsibility</li>
-        <li>Social justice</li>
-        <li>Global peace</li>
-    </ul>
-
-    <h3>5.6 Future Trends</h3>
-    <ul>
-        <li>Personalized learning</li>
-        <li>AI-supported instruction</li>
-        <li>Interdisciplinary curriculum</li>
-        <li>Flexible learning pathways</li>
-    </ul>
-
-    <h3>References (Unit 5)</h3>
-    <ul>
-        <li>Ornstein, A. C., & Hunkins, F. P. (2018). <i>Curriculum: Foundations, principles, and issues</i>. Pearson.</li>
-        <li>Kelly, A. V. (2009). <i>The curriculum: Theory and practice</i>. Sage.</li>
-        <li>UNESCO. (2017). <i>Education for sustainable development goals</i>. UNESCO Publishing.</li>
-    </ul>
-</div>
-
-
-<a href="../index.html" class="card">Back to Homepage</a>
-
-</section>
-
-</body>
-</html>
+        <h3>5.1 Globalization and Curriculum</h3>
+        <p>Influences curriculum
