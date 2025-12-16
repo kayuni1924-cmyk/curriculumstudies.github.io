@@ -4,37 +4,70 @@
     <meta charset="UTF-8">
     <title>Contact Us</title>
     <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        .contact-box {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+        }
+        label {
+            font-weight: bold;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+        }
+    </style>
 </head>
 
 <body>
 
 <header class="header">
-    <h1>Contact the Instructor</h1>
+    <h1>Contact Us</h1>
+    <p>Get in touch with the course instructor</p>
 </header>
 
-<section style="padding:20px;">
+<section style="padding:20px; max-width:900px; margin:auto;">
 
-    <h3>Instructor Contact Information</h3>
+    <!-- CONTACT DETAILS -->
+    <div class="contact-box">
+        <h2>Instructor Contact Information</h2>
 
-    <p><strong>Name:</strong> Mr. Emmanuel Nestory Kayuni</p>
-    <p><strong>Email:</strong> kayuni1924@gmail.com</p>
-    <p><strong>Email:</strong> +91 8807 885 308</p>
-    <p><strong>Organisation:</strong> Mwalimu Nyerere University of Agriculture and Technology (MNUAT) </p>
+        <p><strong>Name:</strong> Mr. Emmanuel Nestory Kayuni</p>
+        <p><strong>Position:</strong> Curriculum and Teaching Specialist</p>
+        <p><strong>Institution:</strong> Mwalimu Nyerere University of Agriculture and Technology</p>
+        <p><strong>Email:</strong> kayuni1924@gmail.com</p>
+        <p><strong>Phone:</strong> +91 8807 885 308</p>
+    </div>
 
-    <h3>Send a Message</h3>
+    <!-- CONTACT FORM -->
+    <div class="contact-box">
+        <h2>Send a Message</h2>
+        <p>Please use the form below for academic inquiries related to the course.</p>
 
-    <form action="mailto:kayuni1924@gmail.com" method="POST" enctype="text/plain">
+        <form action="mailto:kayuni1924@gmail.com" method="POST" enctype="text/plain">
+            <label>Your Full Name</label>
+            <input type="text" name="Name" required>
 
-        <label>Your Name:</label><br>
-        <input type="text" name="Name" required><br><br>
+            <label>Email Address</label>
+            <input type="email" name="Email" required>
 
-        <label>Your Message:</label><br>
-        <textarea name="Message" rows="8" style="width:100%;" required></textarea><br><br>
+            <label>Subject</label>
+            <input type="text" name="Subject" required>
 
-        <button class="card">Send Message</button>
-    </form>
+            <label>Your Message</label>
+            <textarea name="Message" rows="8" required></textarea>
 
-    <a href="index.html" class="card" style="margin-top:20px;">Back to Homepage</a>
+            <button class="card">Send Message</button>
+        </form>
+    </div>
+
+    <a href="index.html" class="card">Back to Homepage</a>
 
 </section>
 
