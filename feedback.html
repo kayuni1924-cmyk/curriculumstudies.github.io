@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Student Feedback</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        .feedback-box {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            max-width: 700px;
+            margin: auto;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        label {
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 12px;
+            margin-top: 8px;
+            margin-bottom: 18px;
+            border-radius: 8px;
+            border: 1px solid #aaa;
+        }
+
+        button {
+            padding: 12px 20px;
+            font-size: 18px;
+            border-radius: 10px;
+            border: none;
+            background-color: #0047ba;
+            color: white;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #003a99;
+        }
+
+        h2, h3 {
+            color: #0047ba;
+        }
+    </style>
+</head>
+
+<body>
+
+<header class="header">
+    <h1>Student Feedback</h1>
+</header>
+
+<section style="padding:20px;">
+
+    <div class="feedback-box">
+
+        <h2>We Value Your Feedback</h2>
+        <p>Please share your feedback to help improve teaching and learning in this course.</p>
+
+        <form action="mailto:kayuni1924@gmail.com" method="POST" enctype="text/plain">
+
+            <label>Your Name (optional):</label>
+            <input type="text" name="Name" placeholder="Enter your name">
+
+            <label>Your Email (optional):</label>
+            <input type="email" name="Email" placeholder="Enter your email">
+
+            <label>Your Feedback:</label>
+            <textarea name="Feedback Message" rows="7" placeholder="Write your feedback here..." required></textarea>
+
+            <button type="submit">Submit Feedback</button>
+        </form>
+    </div>
+
+    <br>
+    <a href="index.html" class="card">Back to Homepage</a>
+
+</section>
+
+</body>
+</html>
