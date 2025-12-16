@@ -2,41 +2,25 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Announcements</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>Course Assignments</title>
+    <link rel="stylesheet" href="../css/style.css">
 
     <style>
-        .announcement-box {
+        .assignment-box {
             background: white;
-            padding: 25px;
+            padding: 20px;
             border-radius: 15px;
-            margin-bottom: 25px;
-            max-width: 900px;
-            margin-left: auto;
-            margin-right: auto;
+            margin-bottom: 30px;
             box-shadow: 0 4px 15px rgba(0,0,0,0.1);
         }
-
-        .announcement-title {
-            font-size: 22px;
+        label {
             font-weight: bold;
-            color: #0047ba;
         }
-
-        .announcement-date {
-            font-size: 14px;
-            color: #777;
-            margin-top: -5px;
-            margin-bottom: 10px;
-        }
-
-        .announcement-text {
-            font-size: 16px;
-            line-height: 1.7;
-        }
-
-        h1, h2 {
-            text-align: center;
+        input, textarea, select {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 15px;
         }
     </style>
 </head>
@@ -44,60 +28,119 @@
 <body>
 
 <header class="header">
-    <h1>Course Announcements</h1>
+    <h1>Course Assignments</h1>
+    <p>Please submit your assignments using the forms below</p>
 </header>
 
-<section style="padding:20px;">
+<section style="padding:20px; max-width:900px; margin:auto;">
 
+    <!-- ASSIGNMENT 1 -->
+    <div class="assignment-box">
+        <h2>Assignment 1: Foundations of Curriculum</h2>
+        <p>Answer all questions as instructed.</p>
 
-    <!-- ====================== ANNOUNCEMENT 1 ====================== -->
-    <div class="announcement-box">
-        <div class="announcement-title">📢 New Assignment Released</div>
-        <div class="announcement-date">Posted on: 15 January 2025</div>
-        <p class="announcement-text">
-            Assignment 1 on <b>Foundations of Curriculum</b> is now available under the Assignments section.
-            All students are advised to read Unit 1 before attempting the assignment.
-        </p>
+        <form action="mailto:kayuni1924@gmail.com" method="POST" enctype="text/plain">
+            <label>Student Name</label>
+            <input type="text" name="Student Name" required>
+
+            <label>Registration Number</label>
+            <input type="text" name="Registration Number" required>
+
+            <label>Assignment Title</label>
+            <input type="text" name="Assignment Title" value="Assignment 1: Foundations of Curriculum" readonly>
+
+            <label>Your Answers</label>
+            <textarea name="Answers" rows="8" required></textarea>
+
+            <button class="card">Submit Assignment</button>
+        </form>
     </div>
 
+    <!-- ASSIGNMENT 2 -->
+    <div class="assignment-box">
+        <h2>Assignment 2: Curriculum Models</h2>
 
-    <!-- ====================== ANNOUNCEMENT 2 ====================== -->
-    <div class="announcement-box">
-        <div class="announcement-title">📅 Upcoming Lecture: Curriculum Models</div>
-        <div class="announcement-date">Posted on: 14 January 2025</div>
-        <p class="announcement-text">
-            The next lecture on <b>Curriculum Models (Unit 2)</b> will be conducted on Friday at 10:00 AM.
-            Kindly ensure you have reviewed Tyler, Taba, and Wheeler models beforehand.
-        </p>
+        <form action="mailto:kayuni1924@gmail.com" method="POST" enctype="text/plain">
+            <label>Student Name</label>
+            <input type="text" name="Student Name" required>
+
+            <label>Registration Number</label>
+            <input type="text" name="Registration Number" required>
+
+            <label>Assignment Title</label>
+            <input type="text" name="Assignment Title" value="Assignment 2: Curriculum Models" readonly>
+
+            <label>Your Answers</label>
+            <textarea name="Answers" rows="8" required></textarea>
+
+            <button class="card">Submit Assignment</button>
+        </form>
     </div>
 
+    <!-- ASSIGNMENT 3 -->
+    <div class="assignment-box">
+        <h2>Assignment 3: Curriculum Implementation</h2>
 
-    <!-- ====================== ANNOUNCEMENT 3 ====================== -->
-    <div class="announcement-box">
-        <div class="announcement-title">📘 New Reading Materials Uploaded</div>
-        <div class="announcement-date">Posted on: 10 January 2025</div>
-        <p class="announcement-text">
-            Additional reference books have been added under Lecture Notes. These include works by
-            <b>Ornstein & Hunkins (2018)</b> and <b>Kelly (2009)</b> to support deeper learning.
-        </p>
+        <form action="mailto:kayuni1924@gmail.com" method="POST" enctype="text/plain">
+            <label>Student Name</label>
+            <input type="text" name="Student Name" required>
+
+            <label>Registration Number</label>
+            <input type="text" name="Registration Number" required>
+
+            <label>Assignment Title</label>
+            <input type="text" name="Assignment Title" value="Assignment 3: Curriculum Implementation" readonly>
+
+            <label>Your Answers</label>
+            <textarea name="Answers" rows="8" required></textarea>
+
+            <button class="card">Submit Assignment</button>
+        </form>
     </div>
 
+    <!-- ASSIGNMENT 4 -->
+    <div class="assignment-box">
+        <h2>Assignment 4: Curriculum Evaluation</h2>
 
-    <!-- ====================== ANNOUNCEMENT 4 ====================== -->
-    <div class="announcement-box">
-        <div class="announcement-title">📝 Class Participation Reminder</div>
-        <div class="announcement-date">Posted on: 7 January 2025</div>
-        <p class="announcement-text">
-            Students are reminded to actively participate in weekly discussions and provide feedback 
-            through the LMS feedback page.
-        </p>
+        <form action="mailto:kayuni1924@gmail.com" method="POST" enctype="text/plain">
+            <label>Student Name</label>
+            <input type="text" name="Student Name" required>
+
+            <label>Registration Number</label>
+            <input type="text" name="Registration Number" required>
+
+            <label>Assignment Title</label>
+            <input type="text" name="Assignment Title" value="Assignment 4: Curriculum Evaluation" readonly>
+
+            <label>Your Answers</label>
+            <textarea name="Answers" rows="8" required></textarea>
+
+            <button class="card">Submit Assignment</button>
+        </form>
     </div>
 
+    <!-- ASSIGNMENT 5 -->
+    <div class="assignment-box">
+        <h2>Assignment 5: Contemporary Issues in Curriculum Studies</h2>
 
-    <br>
-    <a href="index.html" class="card" style="margin-left:auto; margin-right:auto; display:block; max-width:200px; text-align:center;">
-        Back to Homepage
-    </a>
+        <form action="mailto:kayuni1924@gmail.com" method="POST" enctype="text/plain">
+            <label>Student Name</label>
+            <input type="text" name="Student Name" required>
+
+            <label>Registration Number</label>
+            <input type="text" name="Registration Number" required>
+
+            <label>Assignment Title</label>
+            <input type="text" name="Assignment Title" value="Assignment 5: Contemporary Issues in Curriculum Studies" readonly>
+
+            <label>Your Answers</label>
+            <textarea name="Answers" rows="8" required></textarea>
+
+            <button class="card">Submit Assignment</button>
+        </form>
+    </div>
+
+    <a href="../index.html" class="card">Back to Homepage</a>
 
 </section>
 
