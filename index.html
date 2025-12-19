@@ -1,117 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Curriculum Studies LMS</title>
+    <meta charset="UTF-8">
+    <title>Curriculum Studies LMS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<style>
-body{
-    margin:0;
-    font-family: Arial, Helvetica, sans-serif;
-    background:#f5f7fa;
-    color:#202124;
-}
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f4f6f8;
+            color: #333;
+        }
 
-/* ===== HEADER ===== */
-header{
-    background:#1a73e8;
-    color:white;
-    padding:15px 30px;
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-}
-header h1{
-    margin:0;
-    font-size:22px;
-}
-nav a{
-    color:white;
-    margin-left:18px;
-    text-decoration:none;
-    font-weight:bold;
-}
-nav a:hover{
-    text-decoration:underline;
-}
+        /* NAVBAR */
+        .navbar {
+            background: #0b4bd8;
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: white;
+        }
 
-/* ===== EVENTS SLIDER ===== */
-.slider{
-    position:relative;
-    height:320px;
-    overflow:hidden;
-    background:#000;
-}
-.slide{
-    position:absolute;
-    width:100%;
-    height:100%;
-    opacity:0;
-    transition:opacity 1.5s ease-in-out;
-}
-.slide.active{
-    opacity:1;
-}
-.slide img{
-    width:100%;
-    height:100%;
-    object-fit:cover;
-    opacity:0.6;
-}
-.slide-text{
-    position:absolute;
-    bottom:30px;
-    left:40px;
-    color:white;
-}
-.slide-text h2{
-    margin:0;
-    font-size:28px;
-}
-.slide-text p{
-    font-size:16px;
-}
+        .navbar h2 {
+            margin: 0;
+        }
 
-/* ===== SECTIONS ===== */
-.section{
-    padding:60px 30px;
-    text-align:center;
-}
-.welcome{
-    background:#3f51b5;
-    color:white;
-}
-.boxes{
-    display:flex;
-    justify-content:center;
-    gap:30px;
-    flex-wrap:wrap;
-}
-.box{
-    background:#1a73e8;
-    color:white;
-    width:280px;
-    padding:30px;
-    border-radius:8px;
-}
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            font-weight: bold;
+        }
 
-/* ===== FOOTER ===== */
-footer{
-    background:#1a73e8;
-    color:white;
-    text-align:center;
-    padding:15px;
-    font-size:14px;
-}
-</style>
+        /* HERO */
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+                        url('images/banner.jpg');
+            background-size: cover;
+            background-position: center;
+            padding: 120px 20px;
+            text-align: center;
+            color: white;
+        }
+
+        .hero h1 {
+            font-size: 40px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            max-width: 700px;
+            margin: 15px auto;
+        }
+
+        .hero button {
+            padding: 12px 30px;
+            border: none;
+            background: #0b4bd8;
+            color: white;
+            font-size: 16px;
+            border-radius: 30px;
+            cursor: pointer;
+        }
+
+        /* SECTIONS */
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            padding: 40px 20px;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .card a {
+            display: inline-block;
+            margin-top: 15px;
+            text-decoration: none;
+            color: #0b4bd8;
+            font-weight: bold;
+        }
+
+        footer {
+            background: #0b4bd8;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+    </style>
 </head>
 
 <body>
 
-<!-- HEADER -->
-<header>
-    <h1>Curriculum Studies LMS</h1>
-    <nav>
+<!-- NAVIGATION -->
+<div class="navbar">
+    <h2>Curriculum Studies LMS</h2>
+    <div>
         <a href="index.html">Home</a>
         <a href="instructor.html">Instructor</a>
         <a href="lessons/unit1.html">Lecture Notes</a>
@@ -119,75 +116,65 @@ footer{
         <a href="resources/videos.html">Videos</a>
         <a href="announcements.html">Announcements</a>
         <a href="contact.html">Contact</a>
-    </nav>
-</header>
-
-<!-- IMPORTANT EVENTS SLIDER -->
-<div class="slider">
-    <div class="slide active">
-        <img src="images/event1.jpg">
-        <div class="slide-text">
-            <h2>Assignment 1 Released</h2>
-            <p>Foundations of Curriculum – submit before deadline</p>
-        </div>
-    </div>
-
-    <div class="slide">
-        <img src="images/event2.jpg">
-        <div class="slide-text">
-            <h2>New Lecture Notes Uploaded</h2>
-            <p>Curriculum Models – PDF now available</p>
-        </div>
-    </div>
-
-    <div class="slide">
-        <img src="images/event3.jpg">
-        <div class="slide-text">
-            <h2>Live Discussion Session</h2>
-            <p>Join the curriculum discussion forum this Friday</p>
-        </div>
     </div>
 </div>
 
-<!-- WELCOME NOTE -->
-<div class="section welcome">
-    <h2>Lecturer Welcome Note</h2>
+<!-- HERO SECTION -->
+<section class="hero">
+    <h1>Curriculum Studies Learning Management System</h1>
     <p>
-        Welcome to the Curriculum Studies Learning Management System.
-        This platform provides structured lecture notes, assignments,
-        learning videos, and academic interaction for students.
+        A modern digital platform for curriculum theory, lecture notes,
+        assignments, assessments, and academic interaction.
     </p>
-</div>
+    <button onclick="location.href='lessons/unit1.html'">Start Learning</button>
+</section>
 
-<!-- BOXES -->
-<div class="section">
-    <div class="boxes">
-        <div class="box">
-            <h3>Visitor Count</h3>
-            <p>Global access by learners</p>
+<!-- MAIN CONTENT -->
+<div class="container">
+    <h2 style="text-align:center;">LMS Sections</h2>
+
+    <div class="cards">
+        <div class="card">
+            <h3>About Instructor</h3>
+            <p>Learn more about the course instructor and academic background.</p>
+            <a href="instructor.html">View</a>
         </div>
-        <div class="box">
-            <h3>Quick Links</h3>
-            <p>Notes | Assignments | Videos</p>
+
+        <div class="card">
+            <h3>Lecture Notes</h3>
+            <p>Access organized units and downloadable PDF notes.</p>
+            <a href="lessons/unit1.html">Open</a>
+        </div>
+
+        <div class="card">
+            <h3>Assignments</h3>
+            <p>Submit assignments and attempt MCQ assessments.</p>
+            <a href="assignments/assignment1.html">Go</a>
+        </div>
+
+        <div class="card">
+            <h3>Lecture Videos</h3>
+            <p>Watch recorded lectures and learning resources.</p>
+            <a href="resources/videos.html">Watch</a>
+        </div>
+
+        <div class="card">
+            <h3>Announcements</h3>
+            <p>Get latest course updates and notices.</p>
+            <a href="announcements.html">Read</a>
+        </div>
+
+        <div class="card">
+            <h3>Student Interaction</h3>
+            <p>Chat, feedback, and academic discussion.</p>
+            <a href="chat.html">Enter</a>
         </div>
     </div>
 </div>
 
-<!-- FOOTER -->
 <footer>
     © 2025 Curriculum Studies LMS | Designed by Emmanuel Kayuni
 </footer>
-
-<script>
-let slides = document.querySelectorAll(".slide");
-let index = 0;
-
-setInterval(()=>{
-    slides[index].classList.remove("active");
-    index = (index + 1) % slides.length;
-    slides[index].classList.add("active");
-}, 5000);
-</script>
 
 </body>
 </html>
