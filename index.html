@@ -12,14 +12,14 @@ body{
     color:#202124;
 }
 
-/* ===== HEADER ===== */
+/* HEADER */
 header{
     background:#1a73e8;
     color:white;
     padding:15px 30px;
     display:flex;
-    align-items:center;
     justify-content:space-between;
+    align-items:center;
 }
 header h1{
     margin:0;
@@ -31,16 +31,13 @@ nav a{
     text-decoration:none;
     font-weight:bold;
 }
-nav a:hover{
-    text-decoration:underline;
-}
+nav a:hover{ text-decoration:underline; }
 
-/* ===== EVENTS SLIDER ===== */
+/* SLIDER */
 .slider{
     position:relative;
-    height:320px;
+    height:330px;
     overflow:hidden;
-    background:#000;
 }
 .slide{
     position:absolute;
@@ -49,14 +46,12 @@ nav a:hover{
     opacity:0;
     transition:opacity 1.5s ease-in-out;
 }
-.slide.active{
-    opacity:1;
-}
+.slide.active{ opacity:1; }
 .slide img{
     width:100%;
     height:100%;
     object-fit:cover;
-    opacity:0.6;
+    opacity:0.65;
 }
 .slide-text{
     position:absolute;
@@ -72,7 +67,7 @@ nav a:hover{
     font-size:16px;
 }
 
-/* ===== SECTIONS ===== */
+/* SECTIONS */
 .section{
     padding:60px 30px;
     text-align:center;
@@ -95,7 +90,7 @@ nav a:hover{
     border-radius:8px;
 }
 
-/* ===== FOOTER ===== */
+/* FOOTER */
 footer{
     background:#1a73e8;
     color:white;
@@ -114,7 +109,7 @@ footer{
     <nav>
         <a href="index.html">Home</a>
         <a href="instructor.html">Instructor</a>
-        <a href="lessons/unit1.html">Lecture Notes</a>
+        <a href="resources/notes.html">Lecture Notes</a>
         <a href="assignments/assignment1.html">Assignments</a>
         <a href="resources/videos.html">Videos</a>
         <a href="announcements.html">Announcements</a>
@@ -122,29 +117,29 @@ footer{
     </nav>
 </header>
 
-<!-- IMPORTANT EVENTS SLIDER -->
+<!-- IMPORTANT EVENTS -->
 <div class="slider">
     <div class="slide active">
-        <img src="images/event1.jpg">
+        <img src="IMG-20250923-WA0053.jpg">
         <div class="slide-text">
             <h2>Assignment 1 Released</h2>
-            <p>Foundations of Curriculum – submit before deadline</p>
+            <p>Foundations of Curriculum – MCQ & written tasks</p>
         </div>
     </div>
 
     <div class="slide">
-        <img src="images/event2.jpg">
+        <img src="IMG-20251020-WA0051.jpg">
         <div class="slide-text">
-            <h2>New Lecture Notes Uploaded</h2>
-            <p>Curriculum Models – PDF now available</p>
+            <h2>Lecture Notes Available</h2>
+            <p>Download PDF notes from Lecture Notes section</p>
         </div>
     </div>
 
     <div class="slide">
-        <img src="images/event3.jpg">
+        <img src="IMG-20251027-WA0048.jpg">
         <div class="slide-text">
-            <h2>Live Discussion Session</h2>
-            <p>Join the curriculum discussion forum this Friday</p>
+            <h2>Live Academic Discussion</h2>
+            <p>Student discussion forum now active</p>
         </div>
     </div>
 </div>
@@ -154,21 +149,21 @@ footer{
     <h2>Lecturer Welcome Note</h2>
     <p>
         Welcome to the Curriculum Studies Learning Management System.
-        This platform provides structured lecture notes, assignments,
-        learning videos, and academic interaction for students.
+        This platform supports learning through notes, assignments,
+        discussions, and digital academic resources.
     </p>
 </div>
 
-<!-- BOXES -->
+<!-- INFO BOXES -->
 <div class="section">
     <div class="boxes">
         <div class="box">
-            <h3>Visitor Count</h3>
-            <p>Global access by learners</p>
+            <h3>Visitor Statistics</h3>
+            <p>Accessed by learners worldwide</p>
         </div>
         <div class="box">
             <h3>Quick Links</h3>
-            <p>Notes | Assignments | Videos</p>
+            <p>Lecture Notes • Assignments • Videos</p>
         </div>
     </div>
 </div>
@@ -181,7 +176,6 @@ footer{
 <script>
 let slides = document.querySelectorAll(".slide");
 let index = 0;
-
 setInterval(()=>{
     slides[index].classList.remove("active");
     index = (index + 1) % slides.length;
