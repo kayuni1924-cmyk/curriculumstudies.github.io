@@ -5,6 +5,7 @@
 <title>Curriculum Studies LMS</title>
 
 <style>
+/* ===== GLOBAL ===== */
 body{
     margin:0;
     font-family: Arial, Helvetica, sans-serif;
@@ -12,20 +13,21 @@ body{
     color:#202124;
 }
 
-/* HEADER */
+/* ===== HEADER ===== */
 header{
     background:#1a73e8;
     color:white;
-    padding:30px;
+    padding:30px 20px;
     text-align:center;
 }
 header h1{
     margin:0;
     font-size:42px;
+    font-weight:bold;
     letter-spacing:1px;
 }
 
-/* SLIDER */
+/* ===== SLIDER ===== */
 .slider{
     position:relative;
     height:520px;
@@ -38,15 +40,15 @@ header h1{
     opacity:0;
     transition:opacity 1.5s ease-in-out;
 }
-.slide.active{ opacity:1; }
-
+.slide.active{
+    opacity:1;
+}
 .slide img{
     width:100%;
     height:100%;
     object-fit:cover;
     filter:brightness(0.65);
 }
-
 .slide-text{
     position:absolute;
     bottom:60px;
@@ -62,7 +64,7 @@ header h1{
     font-size:18px;
 }
 
-/* WELCOME NOTE */
+/* ===== WELCOME NOTE ===== */
 .welcome{
     background:#3f51b5;
     color:white;
@@ -79,7 +81,7 @@ header h1{
     font-size:16px;
 }
 
-/* LMS SECTIONS */
+/* ===== LMS SECTIONS ===== */
 .section{
     padding:60px 30px;
     text-align:center;
@@ -88,16 +90,145 @@ header h1{
     font-size:32px;
     margin-bottom:40px;
 }
+.boxes{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+}
 .box{
     background:white;
     width:260px;
-    padding:35px 25px;
-    border-radius:12px;
-    box-shadow:0 6px 20px rgba(0,0,0,0.08);
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0 4px 12px rgba(0,0,0,0.08);
+}
+.box h3{
+    margin-top:0;
+    color:#1a73e8;
+}
+.box a{
+    display:inline-block;
+    margin-top:15px;
+    text-decoration:none;
+    color:#1a73e8;
+    font-weight:bold;
 }
 
+/* ===== FOOTER ===== */
+footer{
+    background:#1a73e8;
+    color:white;
+    text-align:center;
+    padding:15px;
+    font-size:14px;
+}
+</style>
+</head>
 
-.box{
-    background:white;
-    width:260px;
-    padding:35px 2
+<body>
+
+<!-- ===== HEADER ===== -->
+<header>
+    <h1>Curriculum Studies LMS</h1>
+</header>
+
+<!-- ===== SLIDER ===== -->
+<div class="slider">
+    <div class="slide active">
+        <img src="IMG-20250923-WA0053.jpg">
+        <div class="slide-text">
+            <h2>Assignment 1 Released</h2>
+            <p>Foundations of Curriculum – MCQ & Written Tasks</p>
+        </div>
+    </div>
+
+    <div class="slide">
+        <img src="IMG-20251020-WA0051.jpg">
+        <div class="slide-text">
+            <h2>Lecture Notes Available</h2>
+            <p>Download PDF notes from Lecture Notes section</p>
+        </div>
+    </div>
+
+    <div class="slide">
+        <img src="IMG-20251027-WA0048.jpg">
+        <div class="slide-text">
+            <h2>Live Academic Discussion</h2>
+            <p>Student discussion forum now active</p>
+        </div>
+    </div>
+</div>
+
+<!-- ===== WELCOME ===== -->
+<div class="welcome">
+    <h2>Lecturer Welcome Note</h2>
+    <p>
+        Welcome to the Curriculum Studies Learning Management System.
+        This platform supports learning through lecture notes, assignments,
+        assessments, discussions, and digital academic resources.
+    </p>
+</div>
+
+<!-- ===== LMS SECTIONS ===== -->
+<div class="section">
+    <h2>LMS Sections</h2>
+
+    <div class="boxes">
+        <div class="box">
+            <h3>About Instructor</h3>
+            <p>Learn about the course instructor and academic background.</p>
+            <a href="instructor.html">View</a>
+        </div>
+
+        <div class="box">
+            <h3>Lecture Notes</h3>
+            <p>Access organized units and downloadable PDF notes.</p>
+            <a href="resources/notes.html">Open</a>
+        </div>
+
+        <div class="box">
+            <h3>Assignments</h3>
+            <p>Submit assignments and attempt MCQ assessments.</p>
+            <a href="assignments/assignment1.html">Go</a>
+        </div>
+
+        <div class="box">
+            <h3>Lecture Videos</h3>
+            <p>Watch recorded lectures and learning resources.</p>
+            <a href="resources/videos.html">Watch</a>
+        </div>
+
+        <div class="box">
+            <h3>Announcements</h3>
+            <p>Get latest course updates and notices.</p>
+            <a href="announcements.html">Read</a>
+        </div>
+
+        <div class="box">
+            <h3>Student Interaction</h3>
+            <p>Chat, feedback, and academic discussion.</p>
+            <a href="chat.html">Enter</a>
+        </div>
+    </div>
+</div>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+    © 2025 Curriculum Studies LMS | Designed by Emmanuel Kayuni
+</footer>
+
+<!-- ===== SLIDER SCRIPT ===== -->
+<script>
+let slides = document.querySelectorAll(".slide");
+let index = 0;
+
+setInterval(()=>{
+    slides[index].classList.remove("active");
+    index = (index + 1) % slides.length;
+    slides[index].classList.add("active");
+}, 5000);
+</script>
+
+</body>
+</html>
