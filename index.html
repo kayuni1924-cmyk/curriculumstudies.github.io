@@ -3,31 +3,178 @@
 <head>
     <meta charset="UTF-8">
     <title>Curriculum Studies LMS</title>
-    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f4f6f8;
+            color: #333;
+        }
+
+        /* NAVBAR */
+        .navbar {
+            background: #0b4bd8;
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: white;
+        }
+
+        .navbar h2 {
+            margin: 0;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            font-weight: bold;
+        }
+
+        /* HERO */
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+                        url('images/banner.jpg');
+            background-size: cover;
+            background-position: center;
+            padding: 120px 20px;
+            text-align: center;
+            color: white;
+        }
+
+        .hero h1 {
+            font-size: 40px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            max-width: 700px;
+            margin: 15px auto;
+        }
+
+        .hero button {
+            padding: 12px 30px;
+            border: none;
+            background: #0b4bd8;
+            color: white;
+            font-size: 16px;
+            border-radius: 30px;
+            cursor: pointer;
+        }
+
+        /* SECTIONS */
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            padding: 40px 20px;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .card a {
+            display: inline-block;
+            margin-top: 15px;
+            text-decoration: none;
+            color: #0b4bd8;
+            font-weight: bold;
+        }
+
+        footer {
+            background: #0b4bd8;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+    </style>
 </head>
 
 <body>
 
-    <header class="header">
-        <h1>Curriculum Studies Learning Management System</h1>
-        <p>Welcome to the official LMS for Curriculum Studies</p>
-    </header>
+<!-- NAVIGATION -->
+<div class="navbar">
+    <h2>Curriculum Studies LMS</h2>
+    <div>
+        <a href="index.html">Home</a>
+        <a href="instructor.html">Instructor</a>
+        <a href="lessons/unit1.html">Lecture Notes</a>
+        <a href="assignments/assignment1.html">Assignments</a>
+        <a href="resources/videos.html">Videos</a>
+        <a href="announcements.html">Announcements</a>
+        <a href="contact.html">Contact</a>
+    </div>
+</div>
 
-    <section class="menu">
+<!-- HERO SECTION -->
+<section class="hero">
+    <h1>Curriculum Studies Learning Management System</h1>
+    <p>
+        A modern digital platform for curriculum theory, lecture notes,
+        assignments, assessments, and academic interaction.
+    </p>
+    <button onclick="location.href='lessons/unit1.html'">Start Learning</button>
+</section>
 
-        <a href="instructor.html" class="card">About Course Instructor</a>
-        <a href="resources/notes.html" class="card">Lecture Notes</a>
-        <a href="resources/videos.html" class="card">Lecture Videos</a>
-        <a href="assignments/index.html" class="card">Assignments</a>
-        <a href="announcements.html" class="card">Announcements</a>
-        <a href="feedback.html" class="card">Student Feedback</a>
-        <a href="contact.html" class="card">Contact Us</a>
+<!-- MAIN CONTENT -->
+<div class="container">
+    <h2 style="text-align:center;">LMS Sections</h2>
 
-    </section>
+    <div class="cards">
+        <div class="card">
+            <h3>About Instructor</h3>
+            <p>Learn more about the course instructor and academic background.</p>
+            <a href="instructor.html">View</a>
+        </div>
 
-    <footer>
-        <p>© 2025 Curriculum Studies LMS | Designed by Emmanuel Kayuni</p>
-    </footer>
+        <div class="card">
+            <h3>Lecture Notes</h3>
+            <p>Access organized units and downloadable PDF notes.</p>
+            <a href="lessons/unit1.html">Open</a>
+        </div>
+
+        <div class="card">
+            <h3>Assignments</h3>
+            <p>Submit assignments and attempt MCQ assessments.</p>
+            <a href="assignments/assignment1.html">Go</a>
+        </div>
+
+        <div class="card">
+            <h3>Lecture Videos</h3>
+            <p>Watch recorded lectures and learning resources.</p>
+            <a href="resources/videos.html">Watch</a>
+        </div>
+
+        <div class="card">
+            <h3>Announcements</h3>
+            <p>Get latest course updates and notices.</p>
+            <a href="announcements.html">Read</a>
+        </div>
+
+        <div class="card">
+            <h3>Student Interaction</h3>
+            <p>Chat, feedback, and academic discussion.</p>
+            <a href="chat.html">Enter</a>
+        </div>
+    </div>
+</div>
+
+<footer>
+    © 2025 Curriculum Studies LMS | Designed by Emmanuel Kayuni
+</footer>
 
 </body>
 </html>
