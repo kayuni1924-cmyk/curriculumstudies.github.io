@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Assignment 1 – Unit 1</title>
+<link rel="stylesheet" href="../css/style.css">
+
+<style>
+.quiz-box{
+background:white;
+padding:20px;
+margin-bottom:20px;
+border-radius:10px;
+box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+button{
+padding:12px 20px;
+background:#0047AB;
+color:white;
+border:none;
+border-radius:8px;
+font-size:16px;
+cursor:pointer;
+}
+.result{
+font-weight:bold;
+font-size:18px;
+margin-top:20px;
+}
+</style>
+</head>
+
+<body>
+
+<header class="header">
+<h1>Assignment 1</h1>
+<p>Unit 1: Foundations of Curriculum</p>
+</header>
+
+<section style="max-width:900px;margin:auto;padding:20px;">
+
+<form id="quizForm">
+
+<!-- QUESTIONS START -->
+
+<script>
+const questions = [
+["Curriculum is best defined as:", "All school subjects", "Planned learning experiences", "Textbooks only", "Examinations only", "b"],
+["Who is known as the father of curriculum?", "Tyler", "Taba", "Dewey", "Plato", "a"],
+["Curriculum helps in:", "Punishment", "Guiding learning", "School building", "Uniform design", "b"],
+["Which is NOT an element of curriculum?", "Objectives", "Content", "Evaluation", "School fence", "d"],
+["Curriculum objectives describe:", "Teacher salary", "Learning outcomes", "School rules", "Class size", "b"],
+["Content refers to:", "Teaching methods", "What is taught", "Assessment only", "Time table", "b"],
+["Learning experiences are:", "Student activities", "School fees", "Textbooks", "Exams", "a"],
+["Evaluation checks:", "Student height", "Learning achievement", "School color", "Classroom size", "b"],
+["Formal curriculum is:", "Planned by school", "Hidden lessons", "Playground learning", "Peer influence", "a"],
+["Hidden curriculum refers to:", "Unwritten values", "Textbooks", "Syllabus", "Lesson plans", "a"],
+["Core curriculum is:", "Optional subjects", "Basic subjects for all", "Extra activities", "Games only", "b"],
+["Null curriculum means:", "Not taught content", "Extra lessons", "Formal subjects", "Hidden lessons", "a"],
+["Activity-based curriculum focuses on:", "Student participation", "Lectures only", "Exams", "Teachers", "a"],
+["Learner-centered curriculum focuses on:", "Teacher", "Student needs", "Administration", "Exams", "b"],
+["Scope of curriculum includes:", "Only syllabus", "All learning experiences", "Books only", "Exams only", "b"],
+["Curriculum is dynamic because it:", "Never changes", "Changes with society", "Is fixed", "Is copied", "b"],
+["Society influences curriculum through:", "Culture & needs", "Uniforms", "Buildings", "Fees", "a"],
+["Technology affects curriculum by:", "Changing learning methods", "Reducing teachers", "Removing books", "Closing schools", "a"],
+["Curriculum relevance means:", "Matching learner needs", "Old content", "Rigid syllabus", "Copying others", "a"],
+["Curriculum development is:", "One-time activity", "Continuous process", "Fixed forever", "Random", "b"]
+];
+
+let html="";
+questions.forEach((q,i)=>{
+html+=`<div class="quiz-box">
+<h3>Question ${i+1}</h3>
+<p>${q[0]}</p>
+<label><input type="radio" name="q${i}" value="a"> ${q[1]}</label><br>
+<label><input type="radio" name="q${i}" value="b"> ${q[2]}</label><br>
+<label><input type="radio" name="q${i}" value="c"> ${q[3]}</label><br>
+<label><input type="radio" name="q${i}" value="d"> ${q[4]}</label>
+</div>`;
+});
+document.write(html);
+</script>
+
+<button type="button" onclick="submitQuiz()">Submit Assignment</button>
+</form>
+
+<p id="result" class="result"></p>
+
+<a href="../index.html" class="card">Back to Homepage</a>
+
+</section>
+
+<script>
+function submitQuiz(){
+let score=0;
+questions.forEach((q,i)=>{
+let ans=document.querySelector(`input[name="q${i}"]:checked`);
+if(ans && ans.value===q[5]) score++;
+});
+document.getElementById("result").innerHTML=
+`You scored <strong>${score}/20</strong>. 
+${score>=15?"Excellent performance!":score>=10?"Good attempt. Revise Unit 1.":"Please revise Unit 1 thoroughly."}`;
+}
+</script>
+
+</body>
+</html>
